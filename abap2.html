@@ -1,0 +1,9 @@
+DATA: lv_grade TYPE i VALUE 85.
+
+IF lv_grade >= 90.
+  WRITE: / 'Grade: A'.
+ELSEIF lv_grade >= 80.
+  WRITE: / 'Grade: B'.
+ELSE.
+  WRITE: / 'Grade: F'.
+ENDIF.
