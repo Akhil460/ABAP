@@ -1,0 +1,9 @@
+abap
+REPORT zloops.
+
+DATA: lv_counter TYPE i VALUE 0.
+
+DO 10 TIMES.
+  lv_counter = lv_counter + 1.
+  WRITE: / lv_counter.
+ENDDO.
