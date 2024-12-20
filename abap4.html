@@ -1,0 +1,11 @@
+abap
+REPORT zfunctions.
+
+PERFORM add_numbers USING 5 10.
+
+FORM add_numbers USING p_num1 TYPE i
+                           p_num2 TYPE i.
+  DATA: lv_result TYPE i.
+  lv_result = p_num1 + p_num2.
+  WRITE: / 'Result:', lv_result.
+ENDFORM.
