@@ -1362,3 +1362,9 @@ ECS creation
 
 10. copy public ip address------>paste in new tab
 
+----------------------------------------------
+
+stress
+sudo amazon-linux-extras install epel -y
+sudo yum install -y stress
+stress --cpu 80 --timeout 20000
